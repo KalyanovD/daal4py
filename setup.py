@@ -57,7 +57,6 @@ elif sys.platform in ['win32', 'cygwin']:
         distutils.ccompiler.compiler_class["clang-cl"] = (
             "dpcppcompiler", "DPCPPCompiler", "Support of DPCPP compiler"
         )
-        distutils.ccompiler.set_executables(linker_so="clang-cl", linker_exe="clang-cl")
 else:
     assert False, sys.platform + ' not supported'
 
