@@ -137,6 +137,16 @@ req_library['gbt_cls_model_create_from_lightgbm_batch.py'] = ['lightgbm']
 req_library['gbt_cls_model_create_from_xgboost_batch.py'] = ['xgboost']
 
 req_os = defaultdict(lambda: [])
+req_os['covariance_spmd.py'] = ["lnx", "win"]
+req_os['dbscan_spmd.py'] = ["lnx", "win"]
+req_os['kmeans_spmd.py'] = ["lnx", "win"]
+req_os['linear_regression_spmd.py'] = ["lnx", "win"]
+req_os['low_order_moms_spmd.py'] = ["lnx", "win"]
+req_os['naive_bayes_spmd.py'] = ["lnx", "win"]
+req_os['pca_spmd.py'] = ["lnx", "win"]
+req_os['qr_spmd.py'] = ["lnx", "win"]
+req_os['ridge_regression_spmd.py'] = ["lnx", "win"]
+req_os['svd_spmd.py'] = ["lnx", "win"]
 
 
 def get_exe_cmd(ex, nodist, nostream):
